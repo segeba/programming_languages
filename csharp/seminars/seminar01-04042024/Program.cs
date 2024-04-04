@@ -26,11 +26,32 @@
 // 4 => -4, -3, -2, -1, 0, 1, 2, 3, 4
 // 2 => -2, -1, 0, 1, 2
 
-Console.Write("Input N: ");
-int n = Convert.ToInt32(Console.ReadLine());
-int start = -n;
-while (start <= n)
+// Console.Write("Input N: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int start = -n;
+// while (start <= n)
+// {
+//     System.Console.Write(start + " ");
+//     start++;
+// }
+
+// Напишите программу, которая принимает на вход
+// трёхзначное целое число и на выходе показывает сумму
+// первой и последней цифры этого числа.
+// 456 => 10
+// 782 => 9
+// 918 => 17
+
+Console.Write("Input three-digit number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if (num >= 100 && num <= 999)
 {
-    System.Console.Write(start + " ");
-    start++;
+    int ed =num % 10;
+    int sot = num / 100;
+    System.Console.WriteLine($"Sum of {ed} and {sot} -> {ed+sot}");
+}
+else
+{
+    System.Console.WriteLine("Your input not three-digit number!");
 }
