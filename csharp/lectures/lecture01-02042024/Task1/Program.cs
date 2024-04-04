@@ -1,6 +1,4 @@
-﻿// Console.WriteLine("Hello, World!");
-
-int value =100;
+﻿int value = 100;
 double d = 12.33;
 char c = '?';
 bool b = true;
